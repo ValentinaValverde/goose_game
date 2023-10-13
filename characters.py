@@ -8,7 +8,7 @@ class Bird:
         if self.health > 0:
             print("%s has %d health and %d power." % (self.name, self.health, self.power))
         else:
-            print("you've been died!")
+            print("%s has been died!" % self.name)
         return self.health
 
 
@@ -16,9 +16,15 @@ class Goose(Bird):
     def attack(self, opponent):
         print("you have attacked %s!" % opponent.name)
         opponent.health -= self.power
+        print(opponent.health)
 
     def honk(self, opponent):
         print("you've deeply frightened %s!" % opponent.name)
+        print("%s has flown away!" % opponent.name)
 
 
-goose = Goose("goose", 100, 50)
+class Pigeon(Bird):
+    def something(self):
+        print("something")
+    
+    
