@@ -41,6 +41,7 @@ while pigeon.alive() and goose.alive():
     elif choose_one == "2" or choose_one == "scare" or choose_one == "scare pigeon":
         print("you've chosen to be spooky")
         goose.honk(pigeon)
+        break
 
     elif choose_one == "3" or choose_one == "fly away":
         print("you're a coward.")
