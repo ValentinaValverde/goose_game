@@ -10,21 +10,23 @@ class Bird:
         else:
             print("%s has been died!" % self.name)
         return self.health
+    
+    def attack(self, opponent):
+        print("%s has attacked %s!" % (self.name, opponent.name))
+        opponent.health -= self.power
+        print("%s now has %s health!" % (opponent.name, opponent.health))
+        print(" ")
 
 
 class Goose(Bird):
-    def attack(self, opponent):
-        print("you have attacked %s!" % opponent.name)
-        opponent.health -= self.power
-        print(opponent.health)
-
     def honk(self, opponent):
         print("you've deeply frightened %s!" % opponent.name)
         print("%s has flown away!" % opponent.name)
 
 
 class Pigeon(Bird):
-    def something(self):
-        print("something")
-    
+    def come_back(self):
+        print("oh no! %s has come back with a friend!" % self.name)
+
+
     
