@@ -9,31 +9,33 @@ chicken = Chicken("chicken", 50, 25)
 rooster = Rooster("rooster", 100, 100)
 
 
+def goose_vs_chicken():
+    print(" ")
+    print(" (o<    !     <o)")
+    print("<_)           (v)")
+    print(" ")
+
+
+def goose_vs_rooster():
+    print("              ,")  
+    print(" (o<    !    <o)")
+    print("<_)           (v)")
+    print(" ")
+
+
+def dead_goose():
+    print(" ")  
+    print(" (x<")
+    print("<_)")
+    print(" ")
+
+
 print(" ")
 print("you are a goose.")
 print("you see a chicken.")
+goose_vs_chicken()
 print("what will you do?")
 print(" ")
-
-def goose_image():
-    print(" ")
-    print(" (o<")
-    print("<_)")
-    print(" ")
-
-
-def duck_image():
-    print(" ")
-    print(" (o>")
-    print("<_)")
-    print(" ")
-
-
-def chicken_image():
-    print(" ")
-    print(" (o>")
-    print("(v)")
-    print(" ")
 
 #idea: at the beginning of the game, have the goose img and the opponent img stare at each other!
 
@@ -53,9 +55,10 @@ while chicken.alive() and goose.alive():
         print(" ")
 
         print("a rooster appears")
-        #show goose img and rooster img staring at each other
+        goose_vs_rooster()        
         rooster.attack(goose)
 
+        dead_goose()
         print("you've died.")
         print("you are not the superior bird.")
 
