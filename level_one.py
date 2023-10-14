@@ -35,7 +35,6 @@ else:
 
 pigeon_array = [pigeon]
 
-# if pigeon.alive() and goose.alive():
 while len(pigeon_array) > 0 and goose.alive():
     print(" ")
     print("1. attack pigeon")
@@ -51,7 +50,7 @@ while len(pigeon_array) > 0 and goose.alive():
 
         #deleting a pigeon from the array each time goose attacks
         del(pigeon_array[0])
-        print(pigeon_array)
+        print("there are now ", len(pigeon_array), " pigeons!")
 
 
     elif choose_one == "2" or choose_one == "scare" or choose_one == "scare pigeon":
@@ -61,6 +60,7 @@ while len(pigeon_array) > 0 and goose.alive():
 
         print("oh no! pigeon has returned with a friend!")
         pigeon_array.append(pigeon)
+        print("there are now ", len(pigeon_array), " pigeons!")
         print(" ")
 
         pigeon.attack(goose)
