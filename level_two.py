@@ -12,7 +12,7 @@ rooster = Rooster("rooster", 100, 100)
 def goose_vs_chicken():
     print(" ")
     print(" (o<    !     <o)")
-    print("<_)           (v)")
+    print("<_)            (v)")
     print(" ")
 
 
@@ -76,3 +76,6 @@ while chicken.alive() and goose.alive():
         print(" ")
         break
 
+    else:
+        print("invalid input. game over, sorry!")
+        break

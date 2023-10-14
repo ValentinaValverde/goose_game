@@ -6,8 +6,8 @@ duck = Duck("duck", 100, 50)
 
 def goose_vs_duck():
     print(" ")
-    print(" (o<         <o)")
-    print("<_)           (_>")
+    print(" (o<     !    <o)")
+    print("<_)            (_>")
     print(" ")
 
 
@@ -52,3 +52,6 @@ while duck.alive() and goose.alive():
         print(" ")
         break
 
+    else:
+        print("invalid input. game over, sorry!")
+        break
